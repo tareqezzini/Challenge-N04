@@ -1,0 +1,161 @@
+/* Global Style  */
+:root
+{
+    --Pale-blue: hsl(225, 100%, 94%);
+}
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body
+{
+    font-size:16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Style  */
+.main
+{
+    background-color: var(--Pale-blue) ;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.main .container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+.main .summary
+{
+    max-height: 700px;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.main .summary .image-sec
+{
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .summary .image-sec img
+{
+    width: 100%;
+}
+.main .summary-body
+{
+    padding: 0 4rem;
+}
+.main .summary .title
+{
+    margin-top:2rem;
+    margin-bottom:1rem;
+    font-weight: 900;
+}
+.main .summary p
+{
+    color: hsl(224, 23%, 55%);
+    font-size: 1.1rem;
+}
+
+.main .icon
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    background-color: hsl(225, 100%, 98%);
+    padding: 2rem 1.5rem;
+    border-radius:1rem
+}
+.main .icon div
+{
+    display: flex;
+    text-align:left;
+}
+.main .icon div h2
+{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.main .icon h2 .prix
+{
+    display: block;
+    font-size: 1rem;
+    color: hsl(224, 23%, 55%);
+}
+.main .icon a
+{
+    color: hsl(245, 75%, 52%);
+    transition: all .3s;
+}
+.main .icon a:hover
+{
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+}
+.main .summary-body button
+{
+    display: block;
+    margin: 0 auto 1.4rem;
+    border: none;
+    background:none;
+}
+.main .summary-body button.order
+{
+    color:  hsl(225, 100%, 98%);
+    background-color:  hsl(245, 75%, 52%);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 5px 15px hsl(224, 23%, 55%);
+    cursor: pointer;
+    transition: all .3s;
+
+}
+.main .summary-body button.order:hover
+{
+    background-color:  hsl(223, 47%, 23%)
+}
+.main .summary-body button.cancel
+{
+    color: hsl(224, 23%, 55%);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s;
+}
+.main .summary-body button.cancel:hover
+{
+    color: hsl(223, 47%, 23%);
+}
+@media (max-width:375px) 
+{
+    .main
+    {
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+  .container
+  {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+    .main .summary-body
+    {
+        padding: 0 1rem;
+    }
+}
