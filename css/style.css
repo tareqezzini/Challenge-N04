@@ -95,8 +95,9 @@ body
 .main .icon h2 .prix
 {
     display: block;
-    font-size: 1rem;
+    font-size: .8rem;
     color: hsl(224, 23%, 55%);
+    font-weight: 400;
 }
 .main .icon a
 {
